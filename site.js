@@ -2,7 +2,10 @@ if (getParameterByName('owner')) {
     var owner = getParameterByName('owner');
     dj('header h1').html('Glow - Inside ~ ' + owner)
 }
-var yourname = "Your Name";
+if(dj('.onr'.val())){
+    var yourname = dj('.onr'.val();
+} else { var yourname = "Your Name";}
+
 let json = get.json('https://raw.githubusercontent.com/glowinside/json/main/1.json')
 var content = "";
 for (i = 0; i < json.length; i++) {
