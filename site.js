@@ -1,8 +1,9 @@
 if (getParameterByName('owner')) {
     var owner = getParameterByName('owner');
-    dj('header h1').html('Glow - Inside ~ ' + owner)
+} else {
+    owner='😇';
 }
-
+dj('header h1').html('Glow - Inside ~ ' + owner)
 window.yourname = "Your Name" ;
 
 let json = get.json('https://raw.githubusercontent.com/glowinside/json/main/1.json')
