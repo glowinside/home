@@ -16,7 +16,7 @@ for (i = 0; i < json.length; i++) {
     <img src="${json[rand].url}" class="post-img">
     <a href="` + json[rand].url + `" download="Glow - Inside.jpg">
     <img class="download" src="https://github.com/glowinside/home/raw/main/download.png"></a>
-    <a href="whatsapp://send?text=${location.origin + location.pathname + "?owner="+yourname}"  data-action="share/whatsapp/share"  
+    <a href="whatsapp://send?text=${location.origin + location.pathname + "?owner="}"  data-action="share/whatsapp/share"  
     target="_blank"> <img class="whatsapp" src="https://github.com/glowinside/home/raw/main/whatsapp.png"></a></div>`;
 }
 
