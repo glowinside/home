@@ -2,9 +2,8 @@ if (getParameterByName('owner')) {
     var owner = getParameterByName('owner');
     dj('header h1').html('Glow - Inside ~ ' + owner)
 }
-if(dj('.onr'.val())){
-    var yourname = dj('.onr'.val();
-} else { var yourname = "Your Name";}
+
+window.yourname = "Your Name" ;
 
 let json = get.json('https://raw.githubusercontent.com/glowinside/json/main/1.json')
 var content = "";
@@ -21,3 +20,5 @@ for (i = 0; i < json.length; i++) {
 }
 
 dj('.gocontainer').html(content);
+
+document.getElementById('share').href = `whatsapp://send?text=${location.origin + location.pathname + "?owner="+ document.getElementById('onr').value}`; 
