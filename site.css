@@ -1,0 +1,40 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    background: rgb(245, 235, 180);
+    text-align: center;
+    position: sticky;
+    width: 100%;
+}
+header h1 {
+
+}
+.gocontainer {
+    text-align: center;
+}
+.image {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background: blanchedalmond;
+}
+
+.image .post-img {
+    width: 400px;
+}
+.whatsapp {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.download {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+}
