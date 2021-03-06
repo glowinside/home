@@ -6,7 +6,7 @@ if (getParameterByName('owner')) {
 dj('header h1').html('Glow - Inside ~ ' + owner)
 window.yourname = "Your Name" ;
 
-let json = get.json('https://raw.githubusercontent.com/glowinside/json/main/1.json')
+let json = get.json('glow.json')
 var content = "";
 for (i = 0; i < json.length; i++) {
     var rand = Math.floor((Math.random() * parseInt(json.length)));
